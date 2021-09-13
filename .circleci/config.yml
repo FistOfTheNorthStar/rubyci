@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: alpine:3.7
     steps:
+      - checkout
       - run:
           name: The First Step
           command: |
@@ -14,4 +15,3 @@ jobs:
           command: |
             ls -al
             echo '^^^That should look familiar^^^'
-
